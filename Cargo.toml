@@ -1,0 +1,22 @@
+[package]
+name = "execvm"
+version = "0.0.1"
+edition = "2024"
+
+[lib]
+name = "execvm"
+crate-type = ["cdylib", "rlib"]
+
+[workspace]
+resolver = "2"
+members = [
+  "libs/*",
+]
+
+[dependencies]
+kernutils = { path = "libs/kernutils" }
+debug_println = { path = "libs/debug_println" }
+ptrauth = { path = "libs/ptrauth" }
+jump = { path = "libs/jump" }
+macho = { path = "libs/macho" }
+libc = "0.2.178"

@@ -1,0 +1,13 @@
+target
+*.DS_Store
+test/outfiles/
+test/_binaries/**/*.dylib
+test/binaries/**/hello_world
+example/srcs/_shell.c
+.auto-run.lldb
+cxx_libtlv/.objs
+cxx_libtlv/libtlv.a
+execvm_example
+.objs/
+a.out
+example/libvector/libvector.a
